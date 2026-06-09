@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
 
 using namespace std;
 namespace Hex0x1 {
@@ -18,6 +19,17 @@ namespace Hex0x1 {
     }
 };
 }
+
+namespace Hex0x3 {
+    class Solution {
+        public:
+        int removeDuplication(vector<int>& nums)
+        {
+            return std::distance(nums.begin(), std::unique(nums.begin(), nums.end()));
+        }
+    };
+}
+
 
 namespace Hex0x2 {
     class Solution {
